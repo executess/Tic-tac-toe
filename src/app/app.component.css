@@ -1,0 +1,26 @@
+@keyframes turning {
+  0%   {transform: rotate(0deg)}
+  25%   {transform: rotate(10deg)}
+  50%   {transform: rotate(-10deg)}
+  100% {transform: rotate(0deg)}
+}
+
+.title{
+font-size: 2em!important;
+color: rgb(70, 69, 155);
+font-family: 'Iceland';
+text-shadow: 1.2px 1.2px gray;
+}
+
+.logo{
+  
+  animation: turning 1.2s ease-out infinite;
+  
+}
+.container {
+    
+    text-align: center;
+    align-content: center!important;
+    margin: auto;
+    max-width: 700px;
+  }

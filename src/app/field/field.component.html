@@ -1,0 +1,75 @@
+
+<!-- <div id="app-layout-body" class="container-fluid body-content"> -->
+    <div class="container text-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary" (click)="newRound(150)"> new round </button>
+        
+        <div class="dropdown">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Players
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button"(click)="changePlayers(false)">[1] One player</button>
+            <button class="dropdown-item" type="button"(click)="changePlayers(true)">[2] Two players</button>
+          </div>
+        </div>
+      </div>
+    <h3 class="massage display-4"[ngClass]="{ 'massage-anim': msgAnim }">{{ massage }}</h3>
+    <h3 class="fontText">cross <span class="badge badge-info ">{{ score[0] }}</span> || zero <span class="badge badge-info">{{ score[1] }}</span></h3>
+    <h2></h2>
+    
+ 
+    </div>
+  <div class="container text-center">
+    
+  <div class="col-lg-5 col-lg-offset-5">
+  
+    <table class="table">
+      <td>
+          <tr class="cell" ><app-cell [id]=1 [cell]=cells[0][1] (onChanged)="onChanged($event)"></app-cell></tr>
+          <tr class="cell border-bottom border-top" ><app-cell [id]=4 [cell]=cells[3][1] (onChanged)="onChanged($event)"></app-cell></tr>
+          <tr class="cell" ><app-cell [id]=7 [cell]=cells[6][1] (onChanged)="onChanged($event)"></app-cell></tr>
+      </td>
+      <td class="border-left border-right">
+          <tr class="cell" ><app-cell [id]=2 [cell]=cells[1][1]></app-cell></tr>
+          <tr class="cell border-bottom border-top" ><app-cell [id]=5 [cell]=cells[4][1]></app-cell></tr>
+          <tr class="cell" ><app-cell [id]=8 [cell]=cells[7][1]></app-cell></tr>
+      </td>
+      <td >
+          <tr class="cell" ><app-cell [id]=3 [cell]=cells[2][1]></app-cell></tr>
+          <tr class="cell border-bottom border-top" ><app-cell [id]=6 [cell]=cells[5][1]></app-cell></tr>
+          <tr class="cell" ><app-cell [id]=9 [cell]=cells[8][1]></app-cell></tr>
+      </td>
+
+
+    </table>
+  </div>
+
+</div>
+ <!-- ================================================== 
+<div id="container">
+  
+    <p><a href="https://en.wikipedia.org/wiki/Red">
+      RED
+    </a></p>
+    
+    <p><a href="https://en.wikipedia.org/wiki/Blue">
+      the Cross Win !!!
+    </a></p>
+    
+    <p><a href="https://en.wikipedia.org/wiki/Yellow">
+      Yellow
+    </a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Yellow">
+        Yellow
+      </a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Yellow">
+        Yellow
+      </a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Yellow">
+        Yellow
+      </a></p>
+      <p><a href="https://en.wikipedia.org/wiki/Yellow">
+        Yellow
+      </a></p>
+  </div> -->

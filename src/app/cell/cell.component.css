@@ -1,0 +1,56 @@
+@keyframes bgSize {
+  0%   {background-size: 5%;}
+  25%  {background-size: 25%;}
+  50%  {background-size: 50%;}
+  100% {background-size: 100%;}
+}
+
+@media (min-width: 750px) {   
+  .cell{
+    width: 120px!important;
+    height: 120px!important;
+  }
+  
+ }
+ /*@media (max-width: 700px) and (min-width: 300px) {   для разрешения экрана от 470 до 930 пикселей 
+  .cell{
+    width: 83px!important;
+    height: 83px!important;
+  }
+  
+ }*/
+
+.container{
+  margin: 0;
+}
+.img-thumbnail {
+  max-width: 67% !important;
+}
+
+.cell {
+  width: 83px;
+  height: 83px;
+  margin: 0;
+  padding: 0;
+  /* width: 140px;
+  height: 140px; */
+  background-position: 50%,50%;
+  background-repeat: no-repeat;
+  /*background-color: red;*/
+ 
+  /* border-style: solid; */
+  /* transition: background 1s , transform 1s 1s linear; */
+}
+.cross {
+  animation:bgSize 0.1s ease-in;
+  background-image: url("../../assets/img/Cross.png");
+  transform: scale3d(2em);
+}
+.zero{
+  animation:bgSize 0.2s ease-in;
+  background-image: url("../../assets/img/Zero.png");
+  transform: scale3d(2em);
+}
+.empty{
+  background-image: none ;
+}

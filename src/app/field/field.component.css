@@ -1,0 +1,115 @@
+
+@keyframes fontSize {
+  0%   {font-size: 0px;}
+  
+  100% {font-size: 40px;}
+}
+
+/* @media (max-width: 700px) and (min-width: 300px) {  /* для разрешения экрана от 470 до 930 пикселей 
+ .container{
+  max-width: 305px!important;
+ }
+ 
+} */
+@media (min-width: 750px) {   
+  .container{
+    max-width: 425px!important;
+  }
+}
+
+.btn{
+  margin: 5px;
+}
+.container {
+
+  text-align: center;
+  align-content: center!important;
+  margin: auto;
+  max-width: 305px;
+  /* max-width: 473px; */
+}
+.container-fluid{
+  /* width: 50%; */
+
+  padding:0;
+  padding-top: 20px;
+}
+
+.fontText{
+  font-family: 'Iceland';
+  font-size: 1.8em;
+  font-weight:bold;
+  color: rgb(85, 85, 170);
+}
+
+.col {
+  height: 9em;
+  background-color: grey;
+  /* border-style: solid; */
+  /* border-style: none; */
+  /* border-spacing: 0px; */
+
+
+}
+.no-border{
+  border-style: none!important;
+  border: none!important;
+  border-spacing: 0px!important;
+}
+.border-top{
+  border-top-style: solid;
+  border-width: var(--border-width)!important;
+  border-color: var(--border-color)!important;
+}
+.border-left{
+  border-left-style: solid;
+  border-width: var(--border-width)!important;
+  border-color: var(--border-color)!important;
+}
+.border-right{
+  border-right-style: solid;
+  border-width: var(--border-width)!important;
+  border-color: var(--border-color)!important;
+}
+.border-bottom{
+  border-bottom-style: solid;
+  border-width: var(--border-width)!important;
+  border-color: var(--border-color)!important;
+}
+
+
+
+td{
+  border-style: none;
+  margin: 0px;
+  padding: 0px;
+  /* .border{
+  border-style: solid;
+}*/
+}
+table {
+border-top-color: blue;
+
+/* border: none!important;
+border-top-style: none;
+border-spacing: 0px!important; */
+ max-width: 500px;
+}
+.massage {
+text-align: center;
+background-color: white;
+/* position: absolute; */
+/* left:44%;
+top:20%; */
+font-size: 40px!important;
+color: rgb(226, 79, 52);
+font-family: 'Iceland';
+text-shadow: 1.2px 1.2px gray;
+
+}
+.massage-anim{
+  animation: fontSize 1s ease-in;
+}
+
+
+/* <!-- ================================================== --> */
