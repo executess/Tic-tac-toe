@@ -1,5 +1,10 @@
 # TicTacToe
 
+*click the link below if you want to try the game*
+
+https://executess.github.io/Tic-tac-toe/
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
