@@ -19,7 +19,7 @@ export class FieldComponent implements OnInit {
   isNewRound:boolean = false
   msgAnim:boolean = false;
   needTimer:boolean = true;
-  constructor(private cellService: CellService, private auService: AiService) { }
+  constructor(private cellService: CellService, private aiService: AiService) { }
 
   onChanged(cell){
       // console.log(this.massage);
@@ -39,8 +39,9 @@ export class FieldComponent implements OnInit {
       // alert(this.massage)
       // this.timer = setTimeout(()=>this.cellService.clearField(), 2000);
 
-      this.cellService.clearField()
-      this.auService.newRound();
+      this.cellService.clearField();
+      
+      this.aiService.newRound();
       // alert("this.massage");
       this.massage="";
       
@@ -52,10 +53,15 @@ export class FieldComponent implements OnInit {
     
     
   }
+  newGame(){
+    this.cellService.clearScore();
+    this.newRound(50);
+  }
   newRound(timer:number){
     
-    if(this.needTimer == false){ alert("false"); return 0;} 
+    if(this.needTimer == false){  return 0;} 
     this.isNewRound = true;
+    
     this.msgAnim = true;
     this.needTimer = false;
     this.timer = setTimeout(()=>this.fnMassage(), timer);
